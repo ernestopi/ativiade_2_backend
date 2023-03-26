@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Tarefa</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script defer src="comportamento.js"></script>
+  </head>
+  <body>
+    <main>
+        <h1>APP Tarefa!</h1>
+        <h1>Criar Nova Tarefa</h1>
+        <form action="#" id="form-task" >
+            <label for="task-responsavel">Responsável:</label>
+            <input type="text" id="task-responsavel" name="task-responsavel">
+            <label for="task-description">Descrição da Tarefa:</label>
+            <textarea id="task-description" name="task-description"></textarea>
+            <label for="task-nivel">Nível:</label>
+            <select id="task-nivel" name="task-nivel">
+              <option value="1">1</option>
+              <option value="2">3</option>
+              <option value="3">5</option>
+              <option value="4">8</option>
+            </select>
+            <label for="task-priority">Primoridade:</label>
+            <select id="task-priority" name="task-priority">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <label for="task-situacao">Situação:</label>
+            <select id="task-situacao" name="task-situacao">
+              <option value="1">Nova</option>
+              <option value="2">Em andamento</option>
+              <option value="3">Pendente</option>
+              <option value="4">Resolvida</option>
+              <option value="5">Cancelada</option>
+            </select>
+            <div id="form-buttons">
+                <input id="btn-cancelar" type="reset" value="Cancelar" />
+                <input id="btn-confirmar" type="submit" value="Adicionar Tarefa" />
+              </div>
+        </form>   
+        <h2>Tarefas Cadastrados</h2>
+        <ul id="list-task"></ul>           
+    </main>
+   
+  </body>
+</html>
